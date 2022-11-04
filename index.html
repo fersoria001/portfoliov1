@@ -33,6 +33,7 @@
         </header>
         <main>
             <section class="llamada container">
+                <img src="img/FOTOPRINCIPAL.jpg" alt="profilephoto" class="llamada__imagen">
                 <h1 class="llamada__titulo">Fernando Agustin Soria</h1>
                 <p class="llamada__texto">Web development</p>
                 <a class="llamada__boton boton" href="#"> Know my projects</a>
@@ -112,10 +113,10 @@
                     <h3 class="formcontato__subtext">Do you want to contact me?</h3>
                     <h3 class="formcontato__subtext">Complete this form and I will contact you as soon as possible. </h3>
                     <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Name">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Ref">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Message"></textarea>
+                        <input class="formcontato__input" type="text" name="nombre" placeholder="Name" required>
+                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail" required>
+                        <input class="formcontato__input" type="text" name="asunto" placeholder="Ref" required>
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Message" required></textarea>
                         <button type="submit" class="contacto__boton">Send message</button>
                     </form>
             </section>
