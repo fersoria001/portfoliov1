@@ -1,0 +1,30 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: var(--fuente-ceniza-oscuro);
+    text-align: center;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.contact__contacto {
+    font-size: 1.2rem;
+    line-height: 1.8;
+
+    margin-top: 2rem;
+}
+
+.contact__contacto-telefono {
+    line-height: normal;
+}
+
+.contact__contacto-email {
+    color: var(--fuente-ceniza-oscuro);
+    text-decoration: underline;
+    display: block;
+}
+
