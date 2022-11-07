@@ -2,6 +2,9 @@
     background-color: var(--background-azul-claro);
     padding-top: 2.5rem;
     padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .educational__title {
@@ -13,7 +16,11 @@
     text-align: center;
     margin-bottom: 2rem;
 }
-
+.educat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .educational__panel {
     display: flex;
     flex-direction: column;
@@ -22,9 +29,9 @@
 }
 
 .educational__panel-imagen {
-    width: 100vw;
-    max-height: 400px;
-    max-width: 600px;
+    width: 40vw;
+    max-height: 200px;
+    max-width: 300px;
     box-shadow: 0 2px 10px 5px #00000020;
     margin-bottom: .5rem;
 }
