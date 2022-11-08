@@ -16,12 +16,12 @@ console.log(input.parentElement);
   if(input.validity.valid)
     {
 	input.parentElement.classList.remove("formcontato__form--invalid");
-	input.parentElement.querySelector("input-message-error").innerHTML = "";
+	input.parentElement.querySelector(".input-message-error").innerHTML = "";
     }
   else
     {
 	input.parentElement.classList.add("formcontato__form--invalid");
-	input.parentElement.querySelector("input-message-error").innerHTML = showErrorMessage(tipoDeInput, input);
+	input.parentElement.querySelector(".input-message-error").innerHTML = showErrorMessage(tipoDeInput, input);
     }
 }
 
@@ -34,6 +34,12 @@ customError: "The name must be at leat 3 characters A/Z-a/z"
 email: {
 valueMissing: "name camp can't be empty",
 customError: "A valid email adress should like like anything@some.com"
+},
+ref: {
+valueMissing: "Ref camp can't be empty"
+},
+mensajes: {
+valueMissing: "To send a message write something"
 }
 }
 
@@ -60,7 +66,7 @@ function nombreValido(nombre)
 
 function validarEmail(input)
 {
-  const re = /\S+@\S+\.\S+/;
+  const re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   let message = "";
   if(!re.test(input.value))
     {
