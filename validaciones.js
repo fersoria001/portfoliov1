@@ -60,9 +60,10 @@ function nombreValido(nombre)
 
 function validarEmail(input)
 {
+  const ema = input.value;
   const re = /\S+@\S+\.\S+/;
   let message = "";
-  if(!re.test(input))
+  if(!re.test(ema))
     {
       message = "A valid email adress should like like anything@some.com"
     }
