@@ -115,10 +115,14 @@
                     <h3 class="formcontato__subtext">Do you want to contact me?</h3>
                     <h3 class="formcontato__subtext">Complete this form and I will contact you as soon as possible. </h3>
                     <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Name" required>
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail" required>
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Ref" required>
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Message" required></textarea>
+                        <input class="formcontato__input" type="text" name="nombre" placeholder="Name" required data-type="nombre">
+                        <span class="input-message-error"></span>
+                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail" required data-type="email">
+                        <span class="input-message-error"></span>
+                        <input class="formcontato__input" type="text" name="asunto" placeholder="Ref" required data-type="ref">
+                        <span class="input-message-error"></span>
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Message" required data-type="messaged"></textarea>
+                        <span class="input-message-error"></span>
                         <button type="submit" class="contacto__boton">Send message</button>
                     </form>
             </section>
@@ -149,5 +153,6 @@
                 </nav>
             </footer>
         </main>
+            <script src="./validaciones.js"></script>
     </body>
 </html>
