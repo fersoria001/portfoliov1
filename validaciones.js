@@ -16,12 +16,12 @@ console.log(input.parentElement);
   if(input.validity.valid)
     {
 	input.parentElement.classList.remove("formcontato__form--invalid");
-	input.parentElement.querySelector(".input-message-error").innerHTML = "";
+	input.parentElement.querySelector("input-message-error").innerHTML = "";
     }
   else
     {
 	input.parentElement.classList.add("formcontato__form--invalid");
-	input.parentElement.querySelector(".input-message-error").innerHTML = showErrorMessage(tipoDeInput, input);
+	input.parentElement.querySelector("input-message-error").innerHTML = showErrorMessage(tipoDeInput, input);
     }
 }
 
